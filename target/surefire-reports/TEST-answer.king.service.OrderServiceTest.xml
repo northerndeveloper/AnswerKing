@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="answer.king.service.OrderServiceTest" time="0.601" tests="4" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_55\jre\bin"/>
+    <property name="java.vm.version" value="24.55-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\NTB-357\Documents\NetBeansProjects\answer-king"/>
+    <property name="java.runtime.version" value="1.7.0_55-b13"/>
+    <property name="netbeans.deploy" value="true"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\NTB-357\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="netbeans.deploy.debugmode" value="true"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.0\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1254"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_55\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\csvn\bin\;C:\csvn\Python25\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\maven\apache-maven-3.2.1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\SWTOOLS\ReadyApps;C:\Program Files (x86)\Common Files\Lenovo;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\instantclient_10_2;C:\Program Files\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Sophos\Sophos SSL VPN Client\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\NTB-357"/>
+    <property name="user.timezone" value="Europe/Athens"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1254"/>
+    <property name="user.name" value="NTB-357"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.0\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_55\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy.debugmode=true -Dnetbeans.deploy=true -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="tr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_55"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_55\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.0\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testAddItem" classname="answer.king.service.OrderServiceTest" time="0.095"/>
+  <testcase name="testPay" classname="answer.king.service.OrderServiceTest" time="0.001"/>
+  <testcase name="testSave" classname="answer.king.service.OrderServiceTest" time="0"/>
+  <testcase name="testGetAll" classname="answer.king.service.OrderServiceTest" time="0.505">
+    <error message="JSON element items.price[0] doesn&apos;t match (a collection containing &lt;1.99&gt;), was &lt;[12.0, 0.99]&gt;." type="com.jayway.restassured.exception.AssertionFailedException"><![CDATA[com.jayway.restassured.exception.AssertionFailedException: JSON element items.price[0] doesn't match (a collection containing <1.99>), was <[12.0, 0.99]>.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at com.jayway.restassured.assertion.BodyMatcher.isFulfilled(BodyMatcher.groovy:51)
+	at com.jayway.restassured.assertion.BodyMatcher$isFulfilled$1.call(Unknown Source)
+	at com.jayway.restassured.assertion.BodyMatcherGroup$_isFulfilled_closure1.doCall(BodyMatcherGroup.groovy:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1379)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1372)
+	at org.codehaus.groovy.runtime.dgm$149.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.jayway.restassured.assertion.BodyMatcherGroup.isFulfilled(BodyMatcherGroup.groovy:32)
+	at com.jayway.restassured.assertion.BodyMatcherGroup$isFulfilled$3.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:328)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$3.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeFilterChain(RequestSpecificationImpl.groovy:466)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$invokeFilterChain$3.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:681)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$this$2$applyPathParamsAndSendRequest$1.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:107)
+	at com.jayway.restassured.specification.RequestSender$get.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.get(ResponseSpecificationImpl.groovy:218)
+	at answer.king.service.OrderServiceTest.testGetAll(OrderServiceTest.java:56)
+]]></error>
+    <system-out>21:58:44.575 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - GET http://localhost:8888/order
+21:58:44.589 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Get connection for route HttpRoute[{}-&gt;http://localhost:8888]
+21:58:44.590 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost/127.0.0.1:8888
+21:58:44.592 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+21:58:44.593 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+21:58:44.593 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:58:44.593 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /order HTTP/1.1
+21:58:44.594 [main] DEBUG org.apache.http.wire - &gt;&gt; "GET /order HTTP/1.1[\r][\n]"
+21:58:44.594 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept: application/json, application/javascript, text/javascript[\r][\n]"
+21:58:44.594 [main] DEBUG org.apache.http.wire - &gt;&gt; "Host: localhost:8888[\r][\n]"
+21:58:44.595 [main] DEBUG org.apache.http.wire - &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+21:58:44.595 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept-Encoding: gz?p,deflate[\r][\n]"
+21:58:44.595 [main] DEBUG org.apache.http.wire - &gt;&gt; "[\r][\n]"
+21:58:44.596 [main] DEBUG org.apache.http.headers - &gt;&gt; GET /order HTTP/1.1
+21:58:44.596 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: application/json, application/javascript, text/javascript
+21:58:44.596 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8888
+21:58:44.596 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:58:44.596 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzýp,deflate
+21:58:44.612 [main] DEBUG org.apache.http.wire - &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+21:58:44.613 [main] DEBUG org.apache.http.wire - &lt;&lt; "Server: Apache-Coyote/1.1[\r][\n]"
+21:58:44.613 [main] DEBUG org.apache.http.wire - &lt;&lt; "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21:58:44.614 [main] DEBUG org.apache.http.wire - &lt;&lt; "Transfer-Encoding: chunked[\r][\n]"
+21:58:44.614 [main] DEBUG org.apache.http.wire - &lt;&lt; "Date: Sun, 30 Nov 2014 19:58:44 GMT[\r][\n]"
+21:58:44.614 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.614 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+21:58:44.615 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+21:58:44.615 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Apache-Coyote/1.1
+21:58:44.615 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json;charset=UTF-8
+21:58:44.615 [main] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+21:58:44.615 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 30 Nov 2014 19:58:44 GMT
+21:58:44.616 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:58:44.616 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Response code: 200; found handler: com.jayway.restassured.internal.ResponseSpecificationImpl$_HamcrestAssertionClosure_getClosure_closure1@5e1defd9
+21:58:44.616 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsing response as: application/json
+21:58:44.617 [main] DEBUG org.apache.http.wire - &lt;&lt; "6d[\r][\n]"
+21:58:44.617 [main] DEBUG org.apache.http.wire - &lt;&lt; "[{"id":1,"paid":false,"items":[{"id":1,"name":"burger","price":12.00},{"id":2,"name":"chips","price":0.99}]}]"
+21:58:44.618 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.618 [main] DEBUG org.apache.http.wire - &lt;&lt; "0[\r][\n]"
+21:58:44.619 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.619 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@7f6dbfd4
+21:58:44.625 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsed data to instance of: class net.sf.json.JSONArray
+21:58:44.667 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - GET http://localhost:8888/order
+21:58:44.680 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Get connection for route HttpRoute[{}-&gt;http://localhost:8888]
+21:58:44.680 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost/127.0.0.1:8888
+21:58:44.682 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+21:58:44.682 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+21:58:44.683 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:58:44.683 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /order HTTP/1.1
+21:58:44.683 [main] DEBUG org.apache.http.wire - &gt;&gt; "GET /order HTTP/1.1[\r][\n]"
+21:58:44.683 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept: application/json, application/javascript, text/javascript[\r][\n]"
+21:58:44.684 [main] DEBUG org.apache.http.wire - &gt;&gt; "Host: localhost:8888[\r][\n]"
+21:58:44.684 [main] DEBUG org.apache.http.wire - &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+21:58:44.684 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept-Encoding: gz?p,deflate[\r][\n]"
+21:58:44.684 [main] DEBUG org.apache.http.wire - &gt;&gt; "[\r][\n]"
+21:58:44.685 [main] DEBUG org.apache.http.headers - &gt;&gt; GET /order HTTP/1.1
+21:58:44.685 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: application/json, application/javascript, text/javascript
+21:58:44.685 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8888
+21:58:44.685 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:58:44.685 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzýp,deflate
+21:58:44.699 [main] DEBUG org.apache.http.wire - &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+21:58:44.700 [main] DEBUG org.apache.http.wire - &lt;&lt; "Server: Apache-Coyote/1.1[\r][\n]"
+21:58:44.700 [main] DEBUG org.apache.http.wire - &lt;&lt; "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21:58:44.701 [main] DEBUG org.apache.http.wire - &lt;&lt; "Transfer-Encoding: chunked[\r][\n]"
+21:58:44.701 [main] DEBUG org.apache.http.wire - &lt;&lt; "Date: Sun, 30 Nov 2014 19:58:44 GMT[\r][\n]"
+21:58:44.701 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.701 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+21:58:44.701 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+21:58:44.701 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Apache-Coyote/1.1
+21:58:44.702 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json;charset=UTF-8
+21:58:44.702 [main] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+21:58:44.702 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 30 Nov 2014 19:58:44 GMT
+21:58:44.702 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:58:44.702 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Response code: 200; found handler: com.jayway.restassured.internal.ResponseSpecificationImpl$_HamcrestAssertionClosure_getClosure_closure1@23d582a7
+21:58:44.703 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsing response as: application/json
+21:58:44.703 [main] DEBUG org.apache.http.wire - &lt;&lt; "6d[\r][\n]"
+21:58:44.703 [main] DEBUG org.apache.http.wire - &lt;&lt; "[{"id":1,"paid":false,"items":[{"id":1,"name":"burger","price":12.00},{"id":2,"name":"chips","price":0.99}]}]"
+21:58:44.704 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.704 [main] DEBUG org.apache.http.wire - &lt;&lt; "0[\r][\n]"
+21:58:44.704 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.704 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@1674b452
+21:58:44.708 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsed data to instance of: class net.sf.json.JSONArray
+21:58:44.752 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - GET http://localhost:8888/order
+21:58:44.767 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Get connection for route HttpRoute[{}-&gt;http://localhost:8888]
+21:58:44.767 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost/127.0.0.1:8888
+21:58:44.769 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+21:58:44.770 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+21:58:44.770 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:58:44.770 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /order HTTP/1.1
+21:58:44.771 [main] DEBUG org.apache.http.wire - &gt;&gt; "GET /order HTTP/1.1[\r][\n]"
+21:58:44.771 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept: application/json, application/javascript, text/javascript[\r][\n]"
+21:58:44.771 [main] DEBUG org.apache.http.wire - &gt;&gt; "Host: localhost:8888[\r][\n]"
+21:58:44.772 [main] DEBUG org.apache.http.wire - &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+21:58:44.772 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept-Encoding: gz?p,deflate[\r][\n]"
+21:58:44.772 [main] DEBUG org.apache.http.wire - &gt;&gt; "[\r][\n]"
+21:58:44.772 [main] DEBUG org.apache.http.headers - &gt;&gt; GET /order HTTP/1.1
+21:58:44.773 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: application/json, application/javascript, text/javascript
+21:58:44.773 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8888
+21:58:44.773 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:58:44.773 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzýp,deflate
+21:58:44.791 [main] DEBUG org.apache.http.wire - &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+21:58:44.792 [main] DEBUG org.apache.http.wire - &lt;&lt; "Server: Apache-Coyote/1.1[\r][\n]"
+21:58:44.792 [main] DEBUG org.apache.http.wire - &lt;&lt; "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21:58:44.792 [main] DEBUG org.apache.http.wire - &lt;&lt; "Transfer-Encoding: chunked[\r][\n]"
+21:58:44.793 [main] DEBUG org.apache.http.wire - &lt;&lt; "Date: Sun, 30 Nov 2014 19:58:44 GMT[\r][\n]"
+21:58:44.793 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.793 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+21:58:44.793 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+21:58:44.793 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Apache-Coyote/1.1
+21:58:44.794 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json;charset=UTF-8
+21:58:44.794 [main] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+21:58:44.794 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 30 Nov 2014 19:58:44 GMT
+21:58:44.794 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:58:44.795 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Response code: 200; found handler: com.jayway.restassured.internal.ResponseSpecificationImpl$_HamcrestAssertionClosure_getClosure_closure1@5a04648b
+21:58:44.795 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsing response as: application/json
+21:58:44.796 [main] DEBUG org.apache.http.wire - &lt;&lt; "6d[\r][\n]"
+21:58:44.796 [main] DEBUG org.apache.http.wire - &lt;&lt; "[{"id":1,"paid":false,"items":[{"id":1,"name":"burger","price":12.00},{"id":2,"name":"chips","price":0.99}]}]"
+21:58:44.796 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.797 [main] DEBUG org.apache.http.wire - &lt;&lt; "0[\r][\n]"
+21:58:44.797 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.797 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@56650fd8
+21:58:44.802 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsed data to instance of: class net.sf.json.JSONArray
+21:58:44.864 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - GET http://localhost:8888/order
+21:58:44.878 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Get connection for route HttpRoute[{}-&gt;http://localhost:8888]
+21:58:44.878 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost/127.0.0.1:8888
+21:58:44.880 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+21:58:44.880 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+21:58:44.880 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:58:44.880 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /order HTTP/1.1
+21:58:44.881 [main] DEBUG org.apache.http.wire - &gt;&gt; "GET /order HTTP/1.1[\r][\n]"
+21:58:44.881 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept: application/json, application/javascript, text/javascript[\r][\n]"
+21:58:44.881 [main] DEBUG org.apache.http.wire - &gt;&gt; "Host: localhost:8888[\r][\n]"
+21:58:44.882 [main] DEBUG org.apache.http.wire - &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+21:58:44.882 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept-Encoding: gz?p,deflate[\r][\n]"
+21:58:44.882 [main] DEBUG org.apache.http.wire - &gt;&gt; "[\r][\n]"
+21:58:44.882 [main] DEBUG org.apache.http.headers - &gt;&gt; GET /order HTTP/1.1
+21:58:44.882 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: application/json, application/javascript, text/javascript
+21:58:44.882 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8888
+21:58:44.883 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:58:44.883 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzýp,deflate
+21:58:44.896 [main] DEBUG org.apache.http.wire - &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+21:58:44.896 [main] DEBUG org.apache.http.wire - &lt;&lt; "Server: Apache-Coyote/1.1[\r][\n]"
+21:58:44.897 [main] DEBUG org.apache.http.wire - &lt;&lt; "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21:58:44.897 [main] DEBUG org.apache.http.wire - &lt;&lt; "Transfer-Encoding: chunked[\r][\n]"
+21:58:44.897 [main] DEBUG org.apache.http.wire - &lt;&lt; "Date: Sun, 30 Nov 2014 19:58:44 GMT[\r][\n]"
+21:58:44.897 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.897 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+21:58:44.898 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+21:58:44.898 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Apache-Coyote/1.1
+21:58:44.898 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json;charset=UTF-8
+21:58:44.898 [main] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+21:58:44.898 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 30 Nov 2014 19:58:44 GMT
+21:58:44.898 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:58:44.899 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Response code: 200; found handler: com.jayway.restassured.internal.ResponseSpecificationImpl$_HamcrestAssertionClosure_getClosure_closure1@37734b10
+21:58:44.899 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsing response as: application/json
+21:58:44.899 [main] DEBUG org.apache.http.wire - &lt;&lt; "6d[\r][\n]"
+21:58:44.899 [main] DEBUG org.apache.http.wire - &lt;&lt; "[{"id":1,"paid":false,"items":[{"id":1,"name":"burger","price":12.00},{"id":2,"name":"chips","price":0.99}]}]"
+21:58:44.900 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.900 [main] DEBUG org.apache.http.wire - &lt;&lt; "0[\r][\n]"
+21:58:44.900 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.901 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@724523e0
+21:58:44.904 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsed data to instance of: class net.sf.json.JSONArray
+21:58:44.943 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - GET http://localhost:8888/order
+21:58:44.954 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Get connection for route HttpRoute[{}-&gt;http://localhost:8888]
+21:58:44.954 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost/127.0.0.1:8888
+21:58:44.956 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+21:58:44.956 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+21:58:44.957 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:58:44.957 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /order HTTP/1.1
+21:58:44.957 [main] DEBUG org.apache.http.wire - &gt;&gt; "GET /order HTTP/1.1[\r][\n]"
+21:58:44.958 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept: application/json, application/javascript, text/javascript[\r][\n]"
+21:58:44.958 [main] DEBUG org.apache.http.wire - &gt;&gt; "Host: localhost:8888[\r][\n]"
+21:58:44.958 [main] DEBUG org.apache.http.wire - &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+21:58:44.958 [main] DEBUG org.apache.http.wire - &gt;&gt; "Accept-Encoding: gz?p,deflate[\r][\n]"
+21:58:44.958 [main] DEBUG org.apache.http.wire - &gt;&gt; "[\r][\n]"
+21:58:44.959 [main] DEBUG org.apache.http.headers - &gt;&gt; GET /order HTTP/1.1
+21:58:44.959 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept: application/json, application/javascript, text/javascript
+21:58:44.959 [main] DEBUG org.apache.http.headers - &gt;&gt; Host: localhost:8888
+21:58:44.959 [main] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:58:44.959 [main] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzýp,deflate
+21:58:44.972 [main] DEBUG org.apache.http.wire - &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+21:58:44.973 [main] DEBUG org.apache.http.wire - &lt;&lt; "Server: Apache-Coyote/1.1[\r][\n]"
+21:58:44.973 [main] DEBUG org.apache.http.wire - &lt;&lt; "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21:58:44.973 [main] DEBUG org.apache.http.wire - &lt;&lt; "Transfer-Encoding: chunked[\r][\n]"
+21:58:44.973 [main] DEBUG org.apache.http.wire - &lt;&lt; "Date: Sun, 30 Nov 2014 19:58:44 GMT[\r][\n]"
+21:58:44.974 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.974 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+21:58:44.974 [main] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+21:58:44.974 [main] DEBUG org.apache.http.headers - &lt;&lt; Server: Apache-Coyote/1.1
+21:58:44.974 [main] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: application/json;charset=UTF-8
+21:58:44.974 [main] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+21:58:44.974 [main] DEBUG org.apache.http.headers - &lt;&lt; Date: Sun, 30 Nov 2014 19:58:44 GMT
+21:58:44.975 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:58:44.975 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Response code: 200; found handler: com.jayway.restassured.internal.ResponseSpecificationImpl$_HamcrestAssertionClosure_getClosure_closure1@76cf0d8
+21:58:44.975 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsing response as: application/json
+21:58:44.976 [main] DEBUG org.apache.http.wire - &lt;&lt; "6d[\r][\n]"
+21:58:44.976 [main] DEBUG org.apache.http.wire - &lt;&lt; "[{"id":1,"paid":false,"items":[{"id":1,"name":"burger","price":12.00},{"id":2,"name":"chips","price":0.99}]}]"
+21:58:44.976 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.976 [main] DEBUG org.apache.http.wire - &lt;&lt; "0[\r][\n]"
+21:58:44.977 [main] DEBUG org.apache.http.wire - &lt;&lt; "[\r][\n]"
+21:58:44.977 [main] DEBUG o.a.h.i.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@137f8b7
+21:58:44.982 [main] DEBUG c.j.r.i.RequestSpecificationImpl$1 - Parsed data to instance of: class net.sf.json.JSONArray
+</system-out>
+  </testcase>
+</testsuite>
